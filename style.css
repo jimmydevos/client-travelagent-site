@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200;1,400;1,700;1,800&display=swap');
+
+:root {
+    --overlay-color: #03a9f4
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+
+}
+
+.showcase {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    color: #fff;
+    z-index: 3;
+    transition: 1.5s;
+}
+
+.showcase.active {
+    right: 300px;
+}
+
+.showcase header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.toggle {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    background: url("Travel/menuIcon.png");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+
+}
+
+.toggle.active {
+    background: url("Travel/closeIconL.png");
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    ;
+    
+}
+
+.logo {
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.logo:hover {
+    color: lightsalmon;
+    transform: scale(o.3) translateY(-30);
+    transition: 0.5s;
+}
+
+.showcase video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.text {
+    position: relative;
+    z-index: 10;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--overlay-color);
+    mix-blend-mode: overlay;
+}
+
+
+.text h2 {
+    font-size: 4em;
+    font-weight: 800 !important;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.text h2:hover {
+    letter-spacing: 6px;
+}
+
+.text h3 {
+    font-size: 2em;
+    font-weight: 800 !important;
+    line-height: 1em;
+}
+
+.text p {
+    font-size: 1.1em;
+    margin: 20px 0;
+    max-width: 700px;
+}
+
+.text a {
+    display: inline-block;
+    font-size: 1em;
+    background: #fff;
+    padding: 10px;
+    text-decoration: none;
+    color: red;
+    letter-spacing: 2px;
+    transform: 0.5s;
+}
+
+.text a:hover {
+    letter-spacing: 8px;
+}
+
+.social {
+    position: absolute;
+    bottom: 0px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    
+}
+
+.social li {
+    list-style: none;
+}
+
+.social li a {
+    display: inline-block;
+    margin-right: 20px;
+    transform: scale(0.29);
+    transition: 0.5s;
+   }
+
+   .social li a:hover {
+       transform: scale(0.3) translateY(-20px);
+   }
+
+   .menu {
+       position: absolute;
+       top: 0;
+       right: 0;
+       width: 300px;
+       height: 100px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+
+   .menu ul {
+       position: relative;
+       list-style: none;
+   }
+
+   .menu ul a {
+       text-decoration: none;
+       font-size: 25px;
+   }
+
+   .menu ul a:hover {
+       color: var(--overlay-color);
+   }
+
+   @media (max-width: 991px) {
+       .showcase,
+       .showcase header {
+           padding: 40px;
+       }
+
+       .text h2 {
+           font-size: 3em;
+       }
+
+       .text h3 {
+           font-size: 2em;
+       }
+       
+   }
+
+   .jimmy {
+       z-index: 1000;
+       background: var(--overlay-color);
+   }

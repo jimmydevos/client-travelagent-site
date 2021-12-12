@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <secion class="showcase active">
+        <header>
+            <h2 class="logo">Travel</h2>
+            <div class="toggle active "></div>
+        </header>
+        
+
+        <video src="Travel/runningWater.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>NEVER STOP</h2>
+            <h3>Exploring Africa</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> 
+                Consequuntur ad ipsam eveniet perferendis obcaecati iure delectus harum unde, <br> nobis totam accusantium, dolorem omnis distinctio perspicia
+                 Sint architecto dolor voluptatem assumenda!</p>
+                 <a href="#">Exploring</a>
+
+        </div>
+
+        
+    </secion>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Hotels</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <footer>
+        <ul class="social">
+            <li><a href="#"><img src="Travel/Media Icons.jpg" alt=""></li></a>
+      </ul>
+     </footer>
+
+    
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+
+
+    
+</body>
+</html>
